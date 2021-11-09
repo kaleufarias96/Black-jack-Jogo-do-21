@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilo.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Black-jack (Jogo do 21)</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark mb-2">
+        <img src="/img/black.png" alt="Jogo de Cartas">
+        <p class="navbar-brand mt-3 ml-2">Jogo de Cartas: Black-Jack (Jogo do 21)</p>
+    </nav>
+
+
+    <!--Placar do Jogador-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card mx-2">
+                    <div class="card-header">
+                        <h3 class="text-primary">
+                            <i class="fas fa-user-friends"></i>
+                            Suas Cartas
+                            <button class="btn btn-primary float-right" id="btComprarCarta">
+                                Comprar Carta
+                            </button>
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                    </div>
+                    <div class="card-footer">
+                        <h4 class="text-primary">Total de Pontos:
+                            <span class="font-weight-bold">0</span>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <!--Placar do Computador-->
+            <div class="col-sm-6">
+                <div class="card mx-2">
+                    <div class="card-header">
+                        <h3 class="text-danger">
+                            <i class="fas fa-laptop"></i>
+                            Cartas do Computador
+                            <button class="btn btn-danger float-right" id="btApostar">
+                                Apostar
+                            </button>
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                    </div>
+                    <div class="card-footer">
+                        <h4 class="text-danger">Total de Pontos:
+                            <span class="font-weight-bold">0</span>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mensagem mx-4 mt-2"></div>
+
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
